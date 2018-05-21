@@ -1,3 +1,10 @@
+
+.channelTitle {
+    font-family: Oswald;
+    font-size: 148%;
+    vertical-align: middle;
+}
+
 .slide .table {
     /* padding-top: 30%;
     padding-bottom: 20%; */
@@ -14,6 +21,11 @@ header {
 .slide .header-text h1 {
     font-size: 100%;
     width: 80%;
+}
+
+.header-text span {
+    font-size: 128%;
+    font-weight: bold;
 }
 
 .slide {
@@ -55,4 +67,18 @@ header {
         width: 20%;
         float: left;
     }
+}
+
+.channelSection {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+    color: #cb0004;
+    font-size: 156%;
+    font-family: Oswald;
+    text-transform: capitalize;
+}
+
+.videoTitle {
+    font-weight: bold;
 }

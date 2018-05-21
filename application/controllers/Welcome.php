@@ -10,7 +10,8 @@ class Welcome extends CI_Controller {
 	 
 	public function index()
 	{
-		$data['data'] = $this->getData();
+        $data['data'] = $this->getData();
+        $data['channel'] = $this->getChannel();
 		$this->load->view('home',$data);
 	}
 
@@ -33,6 +34,16 @@ class Welcome extends CI_Controller {
             $playListVideo[] = $temp; 
         }
 
+        
+        
         return $playListVideo;
-	}
+    }
+    
+    public function getChannel()
+    {
+        $channel = $this->youtube->channelInfo();
+        $temp = $channel['items'][0]['snippet'];
+        
+        return $temp;
+    }
 }

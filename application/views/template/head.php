@@ -4,11 +4,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cardio: Free One Page Template by Luka Cvetinovic</title>
-	<meta name="description" content="<?php echo $description ?>" />
+	<meta name="description" content="<?php// echo $description ?>" />
 	<!-- Favicons (created with http://realfavicongenerator.net/)-->
 	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-touch-icon-60x60.png">
-	<link rel="icon" type="image/png" href="<?php echo $thumbnails['default']['url'] ?>" >
+	<!-- <link rel="icon" type="image/png" href="<?php //echo $thumbnails['default']['url'] ?>" > -->
 	<!-- <link rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16"> -->
 	<link rel="manifest" href="assets/img/favicons/manifest.json">
 	<meta name="theme-color" content="#ffffff">

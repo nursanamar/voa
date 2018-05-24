@@ -46,4 +46,9 @@ class Welcome extends CI_Controller {
         
         return $temp;
     }
+
+    public function video()
+    {
+        $this->load->view('video');
+    }
 }

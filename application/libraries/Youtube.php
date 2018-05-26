@@ -40,7 +40,7 @@ class Youtube {
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-          CURLOPT_URL => "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=10&key=AIzaSyC5d2pr3Qy5G08TTXobMNZ1JSxJXk6RowY&playlistId=".$idPlaylist,
+          CURLOPT_URL => "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=8&key=AIzaSyC5d2pr3Qy5G08TTXobMNZ1JSxJXk6RowY&playlistId=".$idPlaylist,
           CURLOPT_RETURNTRANSFER => true,
           CURLOPT_ENCODING => "",
           CURLOPT_MAXREDIRS => 10,

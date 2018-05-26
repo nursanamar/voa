@@ -12,7 +12,8 @@ class Welcome extends CI_Controller {
 	{
         $data['data'] = $this->getData();
         $data['channel'] = $this->getChannel();
-		$this->load->view('home',$data);
+        $this->load->view('home',$data);
+        // $this->getData();
 	}
 
 	public function getData()
@@ -25,7 +26,8 @@ class Welcome extends CI_Controller {
             $videos = $this->youtube->getPlyalistVideo($value['id']);
             foreach ($videos['items'] as $video) {
                 $tempVideo = array();
-				$tempVideo['title'] = $video['snippet']['title'];
+                $tempVideo['title'] = $video['snippet']['title'];
+                $tempVideo['idVideo'] = $video['snippet']['resourceId']['videoId'];
 				$thumnail = isset($video['snippet']['thumbnails']['maxres']) ? $video['snippet']['thumbnails']['maxres'] : $video['snippet']['thumbnails']['high']; 
                 $tempVideo['image'] = $thumnail['url'];
                 $tempVideo['thumbnail'] = $video['snippet']['thumbnails']['medium']['url'];
@@ -34,6 +36,7 @@ class Welcome extends CI_Controller {
             $playListVideo[] = $temp; 
         }
 
+        // var_dump($video);
         
         
         return $playListVideo;
@@ -47,8 +50,9 @@ class Welcome extends CI_Controller {
         return $temp;
     }
 
-    public function video()
+    public function video($id)
     {
-        $this->load->view('video');
+        $data['id'] = $id;
+        $this->load->view('video',$data);
     }
 }

@@ -7,7 +7,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <div class="preloader">
-		<img src="assets/img/loader.gif" alt="Preloader image">
+		<img src="<?php echo base_url() ?>assets/img/loader.gif" alt="Preloader image">
 	</div>
 	<nav class="navbar">
 		<div class="container">
@@ -21,7 +21,7 @@
 				</button>
 				<a class="navbar-brand" href="#">
 					<div>
-					<img width="50px" height="50px" src="assets/img/valogo.png" data-active-url="assets/img/valogo.png" alt="">
+					<img width="50px" height="50px" src="<?php echo base_url() ?>assets/img/valogo.png" data-active-url="<?php echo base_url() ?>assets/img/valogo.png" alt="">
 					<span class="channelTitle" >Voice Alauddin</span>
 					</div>
 				</a>

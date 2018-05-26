@@ -53,7 +53,7 @@
                     ?>
                      <div class="col-md-3 col-sm-3 video">
                          <img style="width:100%" src="<?php echo $video['thumbnail'] ?>" alt="">
-                         <span class="videoTitle" ><?php echo $video['title'] ?></span>
+                         <span class="videoTitle" > <a href="<?php echo base_url("video/".$video['idVideo']) ?>"><?php echo $video['title'] ?></a></span>
                      </div>
                <?php 
                     $count++;

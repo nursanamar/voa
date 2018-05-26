@@ -81,8 +81,16 @@ header {
     text-transform: capitalize;
 }
 
+.video {
+    margin-bottom: 10px;
+}
+
 .videoTitle {
     font-weight: bold;
+}
+
+.videoTitle a {
+    color: #2a3237;
 }
 
 footer a {
@@ -90,11 +98,12 @@ footer a {
 
 }
 
-footer .footer-link {
-
-}
 
 footer .footer-copyright {
     text-align: center;
     padding-top: 10px;
+}
+
+.player-section {
+    background-color: #3e3e3e
 }

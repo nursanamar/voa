@@ -18,6 +18,8 @@ header {
     background-position: center;
 }
 
+
+
 .slide .header-text h1 {
     font-size: 100%;
     width: 80%;
@@ -81,4 +83,18 @@ header {
 
 .videoTitle {
     font-weight: bold;
+}
+
+footer a {
+    color: white;
+
+}
+
+footer .footer-link {
+
+}
+
+footer .footer-copyright {
+    text-align: center;
+    padding-top: 10px;
 }

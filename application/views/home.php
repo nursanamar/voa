@@ -14,7 +14,7 @@
             <div class="table" style="background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)) 0% 0%">
                     <div class="header-text">
                         <span><?php echo $value['playlist'] ?></span>
-                        <h3 style="text-shadow: 2px 2px 5px #000;" class="light white" ><?php echo $video['title']; ?></h3>
+                        <h3 style="text-shadow: 2px 2px 5px #000;" class="light white" ><a style="color:white" href="<?php echo base_url("video/".$video['idVideo']) ?> " ><?php echo $video['title']; ?></a></h3>
                         <hr style="color:red;width:100%;border: 1px solid red" >
                     </div>
                 </div>

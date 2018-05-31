@@ -30,7 +30,27 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right main-nav">
 					<li><a href="<?php echo base_url() ?>">Home</a></li>
-					<li><a href="#">Menu</a></li>
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+          				<ul class="dropdown-menu">
+							<?php
+								foreach ($playlist as $value) { 
+							?>
+								<li><a href="#"><?php echo $value ?></a></li>
+									
+							<?php   
+								} 
+							?>
+          				</ul>
+						<!-- <a href="sdfj">dsd</a>
+						<ul>
+							<li>dsd</li>
+							<li>dsd</li>
+							<li>dsd</li>
+							<li>dsd</li>
+							<li>dsd</li>
+						</ul> -->
+        			</li>
 					<li><a href="#">About</a></li>
 				</ul>
 			</div>

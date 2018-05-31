@@ -2,7 +2,11 @@
 <html lang="en">
     <?php $this->load->view('template/head',$channel) ?>
 <body>
-<?php $this->load->view('template/nav',$channel) ?>
+
+<?php
+    $nav['playlist'] = $playlist;
+    $this->load->view('template/nav',$nav); 
+?>
 
 
 

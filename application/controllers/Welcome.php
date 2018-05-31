@@ -11,8 +11,12 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
         $data['data'] = $this->getData();
+        foreach ($data['data'] as $value) {
+            $data['playlist'][] = $value['playlist'];
+        }
         $data['channel'] = $this->getChannel();
         $this->load->view('home',$data);
+        // var_dump($data['playlist']);
         // $this->getData();
 	}
 

@@ -107,3 +107,16 @@ footer .footer-copyright {
 .player-section {
     background-color: #3e3e3e
 }
+
+.mobile-nav ul {
+    overflow-y: scroll;
+}
+
+.mobile-nav .dropdown-menu {
+    display: none;
+}
+
+.mobile-nav .open .dropdown-menu {
+    display: contents;
+    text-align: center;
+}

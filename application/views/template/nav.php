@@ -19,7 +19,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="<?php echo base_url() ?>">
 					<div>
 					<img width="50px" height="50px" src="<?php echo base_url() ?>assets/img/valogo.png" data-active-url="<?php echo base_url() ?>assets/img/valogo.png" alt="">
 					<span class="channelTitle" >Voice Alauddin</span>
@@ -29,7 +29,7 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right main-nav">
-					<li><a href="#">Home</a></li>
+					<li><a href="<?php echo base_url() ?>">Home</a></li>
 					<li><a href="#">Menu</a></li>
 					<li><a href="#">About</a></li>
 				</ul>

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?php $this->load->view('template/head',$snippet) ?>
+    <?php 
+    
+        $this->load->view('template/head_video',$snippet) 
+        
+    ?>
 <body>
 <?php $this->load->view('template/nav') ?>
 

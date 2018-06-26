@@ -8,7 +8,8 @@
 	<meta property="og:description" content="Channel berita UIN Alauddin Makassar" />
 	<meta property="og:url" content="<?php echo current_url() ?>" />
 	<meta property="og:site_name" content="Voice Alauddin">
-
+	<meta property="og:image" content="https://yt3.ggpht.com/-zNxBfDmuzEU/AAAAAAAAAAI/AAAAAAAAAAA/2E8-12qlyo4/s800-c-k-no-mo-rj-c0xffffff/photo.jpg" />
+	
 	<link rel="icon" type="image/png" href="<?php echo base_url() ?>assets/img/valogo.png" >
 	<!-- <link rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16"> -->
 	<link rel="manifest" href="assets/img/favicons/manifest.json">

@@ -3,11 +3,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Voice Alauddin</title>
-	<meta name="description" content="Channel berita UIN Alauddin Makassar" />
-	<meta property="og:description" content="Channel berita UIN Alauddin Makassar" />
+	<title>Voice Alauddin | <?php echo $title ?></title>
 	<meta property="og:url" content="<?php echo current_url() ?>" />
 	<meta property="og:site_name" content="Voice Alauddin">
+	<meta property="og:title" content="<?php echo $title ?>" />
+	<meta property="og:description" content="<?php echo $description ?>" />
+	<meta property="og:image" content="<?php echo isset($thumbnails['maxres']) ? $thumbnails['maxres']['url'] : $thumbnails['standard']['url'] ?>" />
 
 	<link rel="icon" type="image/png" href="<?php echo base_url() ?>assets/img/valogo.png" >
 	<!-- <link rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16"> -->

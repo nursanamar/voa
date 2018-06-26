@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?php $this->load->view('template/head') ?>
+    <?php $this->load->view('template/head',$snippet) ?>
 <body>
 <?php $this->load->view('template/nav') ?>
 
@@ -28,7 +28,7 @@
                     <iframe id="video" src="https://www.youtube.com/embed/<?php echo $id ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
                 <div class="col-sm-3 col-md-3" >
-                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/channelvoicealauddin" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
                 </div>
             </div>
         </div>

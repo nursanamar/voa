@@ -45,7 +45,7 @@ class Welcome extends CI_Controller {
         
         return $playListVideo;
     }
-    
+
     public function getChannel()
     {
         $channel = $this->youtube->channelInfo();
@@ -56,7 +56,8 @@ class Welcome extends CI_Controller {
 
     public function video($id)
     {
-        $data['id'] = $id;
-        $this->load->view('video',$data);
+        // $data['id'] = $id;
+        $data = $this->youtube->getVideo($id);
+        $this->load->view('video',$data['items'][0]);
     }
 }

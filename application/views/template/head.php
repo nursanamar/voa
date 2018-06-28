@@ -4,8 +4,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Voice Alauddin</title>
-	<meta name="description" content="Channel berita UIN Alauddin Makassar" />
-	<meta property="og:description" content="Channel berita UIN Alauddin Makassar" />
 	<meta property="og:url" content="<?php echo current_url() ?>" />
 	<meta property="og:site_name" content="Voice Alauddin">
 	<meta property="og:image" content="https://yt3.ggpht.com/-zNxBfDmuzEU/AAAAAAAAAAI/AAAAAAAAAAA/2E8-12qlyo4/s800-c-k-no-mo-rj-c0xffffff/photo.jpg" />

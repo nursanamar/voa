@@ -36,7 +36,7 @@
 							<?php
 								foreach ($playlist as $value) { 
 							?>
-								<li><a href="#"><?php echo $value ?></a></li>
+								<li><a href="<?php echo site_url('playlist/'.$value['id']) ?>"><?php echo $value['title'] ?></a></li>
 									
 							<?php   
 								} 

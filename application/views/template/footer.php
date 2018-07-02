@@ -46,3 +46,12 @@
 	<script src="<?php echo base_url() ?>assets/js/jquery.onepagenav.js"></script>
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 	<script src="<?php echo base_url() ?>assets/js/slick/slick.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121737950-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121737950-2');
+</script>

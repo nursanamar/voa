@@ -48,7 +48,7 @@
 	<script src="<?php echo base_url() ?>assets/js/slick/slick.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121737950-2"></script>
-<!-- <script>
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -61,4 +61,4 @@
     google_ad_client: "ca-pub-7444056248163657",
     enable_page_level_ads: true
   });
-</script> -->
+</script>

@@ -26,84 +26,24 @@
 <section id="services" class="section playlist-list">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quo velit asperiores error. Pariatur dolor quos cumque impedit
-                    odit inventore aspernatur maiores, voluptatibus, nihil modi sed deserunt veniam sunt vel!
-                </p>
+        <h4 class="channelSection"><?php echo $title ?></h4>
+            <?php 
+            $count = 0;
+            foreach ($data as $video) { 
+                if($count == 4){
+                    echo "</div><div class='row'>";
+                    $count = 0;
+                }    
+            ?>
+            <div class="col-md-3 col-sm-3 video">
+                <img style="width:100%" src="<?php echo $video['thumbnail'] ?>" alt="">
+                <span class="videoTitle">
+                    <a href="<?php echo base_url("video/".$video['idVideo']) ?>">
+                        <?php echo $video['title'] ?>
+                    </a>
+                </span>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quo velit asperiores error. Pariatur dolor quos cumque impedit
-                    odit inventore aspernatur maiores, voluptatibus, nihil modi sed deserunt veniam sunt vel!
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quo velit asperiores error. Pariatur dolor quos cumque impedit
-                    odit inventore aspernatur maiores, voluptatibus, nihil modi sed deserunt veniam sunt vel!
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quo velit asperiores error. Pariatur dolor quos cumque impedit
-                    odit inventore aspernatur maiores, voluptatibus, nihil modi sed deserunt veniam sunt vel!
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quo velit asperiores error. Pariatur dolor quos cumque impedit
-                    odit inventore aspernatur maiores, voluptatibus, nihil modi sed deserunt veniam sunt vel!
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quo velit asperiores error. Pariatur dolor quos cumque impedit
-                    odit inventore aspernatur maiores, voluptatibus, nihil modi sed deserunt veniam sunt vel!
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quo velit asperiores error. Pariatur dolor quos cumque impedit
-                    odit inventore aspernatur maiores, voluptatibus, nihil modi sed deserunt veniam sunt vel!
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quo velit asperiores error. Pariatur dolor quos cumque impedit
-                    odit inventore aspernatur maiores, voluptatibus, nihil modi sed deserunt veniam sunt vel!
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quo velit asperiores error. Pariatur dolor quos cumque impedit
-                    odit inventore aspernatur maiores, voluptatibus, nihil modi sed deserunt veniam sunt vel!
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quo velit asperiores error. Pariatur dolor quos cumque impedit
-                    odit inventore aspernatur maiores, voluptatibus, nihil modi sed deserunt veniam sunt vel!
-                </p>
-            </div>
+           <?php $count++; } ?>
         </div>
     </div>
 </section>

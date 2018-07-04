@@ -17,7 +17,7 @@
             <header class="banner" style="background-image:url('<?php echo $video['image']; ?>')"  id="intro" >
             <div class="table" style="background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)) 0% 0%">
                     <div class="header-text">
-                        <span><?php echo $value['playlist']['title'] ?></span>
+                        <a style="color:white" href="<?php echo site_url('playlist/'.$value['playlist']['id']) ?>"><span><?php echo $value['playlist']['title'] ?></span></a>
                         <h3 style="text-shadow: 2px 2px 5px #000;" class="light white" ><a style="color:white" href="<?php echo base_url("video/".$video['idVideo']) ?> " ><?php echo $video['title']; ?></a></h3>
                         <hr style="color:red;width:100%;border: 1px solid red" >
                     </div>
@@ -47,7 +47,7 @@
             <div class="col-sm-9 col-md-9" >
             <?php foreach ($data as $playlist) { ?>
             <div class="row">
-                <h4 class="channelSection"><?php echo ucfirst($playlist['playlist']['title']) ?></h4>
+                <a href="<?php echo site_url('playlist/'.$value['playlist']['id']) ?>"><h4 class="channelSection"><?php echo ucfirst($playlist['playlist']['title']) ?></h4></a>
            <?php 
                 $count = 0;
                 foreach ($playlist['video'] as $video) {

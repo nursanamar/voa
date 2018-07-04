@@ -120,3 +120,7 @@ footer .footer-copyright {
     display: contents;
     text-align: center;
 }
+
+.playlist-list {
+    background: white;
+}

@@ -68,6 +68,26 @@ class Welcome extends CI_Controller
     public function playlist($idPlaylist)
     {
         $data['playlist'] = $this->getPlaylists();
+        $videos = $this->youtube->getPlyalistVideo($idPlaylist, 16);
+        $data['title'] = "";
+
+        foreach ($data['playlist'] as $value) {
+            if ($value['id'] == $idPlaylist) {
+                $data['title'] = $value['title'];
+            }
+        }
+
+        foreach ($videos['items'] as $video) {
+            $tempVideo = array();
+            $tempVideo['title'] = $video['snippet']['title'];
+            $tempVideo['idVideo'] = $video['snippet']['resourceId']['videoId'];
+            $thumnail = isset($video['snippet']['thumbnails']['maxres']) ? $video['snippet']['thumbnails']['maxres'] : $video['snippet']['thumbnails']['high'];
+            $tempVideo['image'] = $thumnail['url'];
+            $tempVideo['thumbnail'] = $video['snippet']['thumbnails']['medium']['url'];
+            $data['data'][] = $tempVideo;
+        }
+
+        // var_dump($data['data']);
         $this->load->view('playlist', $data);
         // var_dump($data);
     }

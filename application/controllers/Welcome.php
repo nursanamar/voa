@@ -105,4 +105,10 @@ class Welcome extends CI_Controller
 
         return $data;
     }
+
+    public function cyberGuide()
+    {
+        $data['playlist'] = $this->getPlaylists();
+        $this->load->view('cyberGuide',$data);
+    }
 }

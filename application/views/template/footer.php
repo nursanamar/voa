@@ -9,7 +9,7 @@
 						<a href="">Redaksi</a>
 					</div>
 					<div class="col-sm-4 col-md-4" >
-						<a href="">Pedoman Siber</a>
+						<a href="<?php echo site_url('pedoman-siber') ?>">Pedoman Siber</a>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-6" >

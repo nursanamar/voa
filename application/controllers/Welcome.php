@@ -65,11 +65,15 @@ class Welcome extends CI_Controller
         $this->load->view('video', $data['items'][0]);
     }
 
-    public function playlist($idPlaylist)
+    public function playlist($idPlaylist,$page = '#')
     {
         $data['playlist'] = $this->getPlaylists();
-        $videos = $this->youtube->getPlyalistVideo($idPlaylist, 16);
+        $videos = $this->youtube->getPlyalistVideo($idPlaylist, 16,$page);
         $data['title'] = "";
+
+        $data['nextPage'] = isset($videos["nextPageToken"]) ? $videos["nextPageToken"] : "#";
+        $data['prevPage'] = isset($videos["prevPageToken"]) ? $videos["prevPageToken"] : "#" ;
+        $data['idPlaylist'] = $idPlaylist;
 
         foreach ($data['playlist'] as $value) {
             if ($value['id'] == $idPlaylist) {

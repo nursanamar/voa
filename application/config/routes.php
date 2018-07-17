@@ -53,5 +53,6 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['video/(:any)'] = 'welcome/video/$1';
 $route['playlist/(:any)'] = 'welcome/playlist/$1';
+$route['playlist/(:any)/(:any)'] = 'welcome/playlist/$1/$2';
 $route['pedoman-siber'] = 'welcome/cyberGuide';
 $route['translate_uri_dashes'] = FALSE;

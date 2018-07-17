@@ -34,7 +34,7 @@ class Youtube
 
     }
 
-    public function getPlyalistVideo($idPlaylist, $max = 8,$page)
+    public function getPlyalistVideo($idPlaylist, $max = 8,$page = "")
     {
         $curl = curl_init();
 

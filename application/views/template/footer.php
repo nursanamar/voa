@@ -17,9 +17,6 @@
 						<a href="">Kontak Kami</a>
 					</div>
 					<div class="col-sm-4 col-md-4" >
-						<a href="">Metodologi Riset</a>
-					</div>
-					<div class="col-sm-4 col-md-4" >
 						<a href="">FAQ</a>
 					</div>
 				</div>

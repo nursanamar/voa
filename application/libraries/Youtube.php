@@ -34,12 +34,12 @@ class Youtube
 
     }
 
-    public function getPlyalistVideo($idPlaylist, $max = 8)
+    public function getPlyalistVideo($idPlaylist, $max = 8,$page)
     {
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=" . $max . "&key=AIzaSyC5d2pr3Qy5G08TTXobMNZ1JSxJXk6RowY&playlistId=" . $idPlaylist,
+            CURLOPT_URL => "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=" . $max . "&key=AIzaSyC5d2pr3Qy5G08TTXobMNZ1JSxJXk6RowY&playlistId=" . $idPlaylist."&pageToken=".$page,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,

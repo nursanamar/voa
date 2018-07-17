@@ -45,6 +45,18 @@
             </div>
            <?php $count++; } ?>
         </div>
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-sm-offset-5 col-md-offset-5">
+                <ul class="pagination">
+                    <li class="<?php echo ($prevPage == "#") ? "disabled" : '' ?>">
+                        <a href="<?php echo ($prevPage == "#") ? $prevPage : site_url("playlist/".$idPlaylist."/".$prevPage) ?>">Prev</a>
+                    </li>
+                    <li class="<?php echo ($nextPage == "#") ? "disabled" : '' ?>">
+                        <a href="<?php echo ($nextPage == "#") ? $nextPage : site_url("playlist/".$idPlaylist."/".$nextPage) ?>">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 

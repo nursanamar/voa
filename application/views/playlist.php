@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?php $this->load->view('template/head') ?>
+    <?php $this->load->view('template/head_playlist') ?>
     <style>
         nav.original {
             background: white;

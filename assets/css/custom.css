@@ -1,7 +1,7 @@
 
 .channelTitle {
     font-family: Oswald;
-    font-size: 148%;
+    font-size: 117%;
     vertical-align: middle;
 }
 
@@ -55,7 +55,41 @@ header {
         width: 20%;
         float: left;
     }
+    .channelTitle { 
+    font-size: 107%;
+    }
+    .navbar-brand img {
+        width: 6%
+    }
+   
+     .navbar-header {
+        width: 49%;
+    }
+    
 }
+@media (max-width: 768px){
+    .navbar-brand img {
+        width: 11%
+    }
+     .navbar-brand {
+       width: 81%
+    }
+     .channelTitle { 
+    font-size: 94%;
+    }
+    .navbar-toggle {
+        margin-top: -3px;
+        margin-bottom: -6px;
+    }
+   
+}
+
+.navbar-header {
+
+    display: inline-block;
+    margin-top: 8px;
+    }
+    
 
 @media (min-width: 992px) {
     .col-md-5ths {
@@ -105,7 +139,11 @@ footer .footer-copyright {
 }
 
 .player-section {
-    background-color: #3e3e3e
+    background-color: #ffffff
+}
+
+.description {
+    color: #000 !important;
 }
 
 .mobile-nav ul {

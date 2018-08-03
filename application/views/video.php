@@ -6,6 +6,11 @@
         
     ?>
 <body>
+<style>
+    .original li a {
+        color : #bbb
+    }
+</style>
 <?php
     $nav['playlist'] = $playlist;
     $this->load->view('template/nav', $nav);
@@ -61,7 +66,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-12 description" style="margin-top:2%">
-                        <p>
+                        <p style="color: #000">
                             <?php echo nl2br($snippet['description']) ?>
                         </p>
                     </div>

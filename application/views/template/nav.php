@@ -21,7 +21,7 @@
 				</button>
 				<a class="navbar-brand" href="<?php echo base_url() ?>">
 					<div>
-					<img width="50px" height="50px" src="<?php echo base_url() ?>assets/img/valogo.png" data-active-url="<?php echo base_url() ?>assets/img/valogo.png" alt="">
+					<img src="<?php echo base_url() ?>assets/img/valogo.png" data-active-url="<?php echo base_url() ?>assets/img/valogo.png" alt="">
 					<span class="channelTitle" >Voice Alauddin</span>
 					</div>
 				</a>

@@ -117,4 +117,13 @@ class Welcome extends CI_Controller
         $data['playlist'] = $this->getPlaylists();
         $this->load->view('cyberGuide',$data);
     }
+
+    public function ssl1()
+    {
+        echo "XLmtUDNFzFA1Vc6d8UjYXgbztnJA1eZpbbUHJn00rwI.k_I7Oadwf7mx8IgpmcdHNKi3cTawDN2WzOBFLZtyWGQ";
+    }
+    public function ssl()
+    {
+        echo "YV4zI-Sm8ablejavm6wNMGsSz8vo1LzktWDGlVpcOp0.k_I7Oadwf7mx8IgpmcdHNKi3cTawDN2WzOBFLZtyWGQ";
+    }
 }

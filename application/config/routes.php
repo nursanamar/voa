@@ -51,6 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
+$route['.well-known/acme-challenge/YV4zI-Sm8ablejavm6wNMGsSz8vo1LzktWDGlVpcOp0'] = 'welcome/ssl';
+$route['.well-known/acme-challenge/XLmtUDNFzFA1Vc6d8UjYXgbztnJA1eZpbbUHJn00rwI'] = 'welcome/ssl1';
 $route['video/(:any)'] = 'welcome/video/$1';
 $route['playlist/(:any)'] = 'welcome/playlist/$1';
 $route['playlist/(:any)/(:any)'] = 'welcome/playlist/$1/$2';

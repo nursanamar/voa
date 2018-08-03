@@ -34,12 +34,12 @@ class Youtube
 
     }
 
-    public function getPlyalistVideo($idPlaylist, $max = 8,$page = "")
+    public function getPlyalistVideo($idPlaylist, $max = 8, $page = "")
     {
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=" . $max . "&key=AIzaSyC5d2pr3Qy5G08TTXobMNZ1JSxJXk6RowY&playlistId=" . $idPlaylist."&pageToken=".$page,
+            CURLOPT_URL => "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=" . $max . "&key=AIzaSyC5d2pr3Qy5G08TTXobMNZ1JSxJXk6RowY&playlistId=" . $idPlaylist . "&pageToken=" . $page,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -93,13 +93,13 @@ class Youtube
         }
     }
 
-    public function getVideo($id)
+    public function getVideo($query)
     {
 
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://www.googleapis.com/youtube/v3/videos?key=AIzaSyC5d2pr3Qy5G08TTXobMNZ1JSxJXk6RowY&part=snippet&id=" . $id,
+            CURLOPT_URL => "https://www.googleapis.com/youtube/v3/search?part=snippet&q=".urlencode($query)."&key=AIzaSyC5d2pr3Qy5G08TTXobMNZ1JSxJXk6RowY&channelId=UCO-zxU3Yu1NbgGhyZ4KMkRA",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -126,7 +126,7 @@ class Youtube
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "https://www.googleapis.com/youtube/v3/playlists?part=snippet&id=".$idPlaylist."&key=AIzaSyC5d2pr3Qy5G08TTXobMNZ1JSxJXk6RowY",
+            CURLOPT_URL => "https://www.googleapis.com/youtube/v3/playlists?part=snippet&id=" . $idPlaylist . "&key=AIzaSyC5d2pr3Qy5G08TTXobMNZ1JSxJXk6RowY",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -144,7 +144,7 @@ class Youtube
         if ($err) {
             return false;
         } else {
-           return json_decode($response);
+            return json_decode($response);
         }
 
     }

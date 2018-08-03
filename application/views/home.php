@@ -18,7 +18,7 @@
             <div class="table" style="background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)) 0% 0%">
                     <div class="header-text">
                         <a style="color:white" href="<?php echo site_url('playlist/'.$value['playlist']['id']) ?>"><span><?php echo $value['playlist']['title'] ?></span></a>
-                        <h3 style="text-shadow: 2px 2px 5px #000;" class="light white" ><a style="color:white" href="<?php echo base_url("video/".$video['idVideo']) ?> " ><?php echo $video['title']; ?></a></h3>
+                        <h3 style="text-shadow: 2px 2px 5px #000;" class="light white" ><a style="color:white" href="<?php echo base_url("video/".urlencode(str_replace(' ', '-', strtolower($video['title'])))) ?> " ><?php echo $video['title']; ?></a></h3>
                         <hr style="color:red;width:100%;border: 1px solid red" >
                     </div>
                 </div>
@@ -51,13 +51,14 @@
            <?php 
                 $count = 0;
                 foreach ($playlist['video'] as $video) {
+                    $slug = urlencode(str_replace(' ', '-', strtolower($video['title'])));
                     if($count === 4){
                         echo "</div><div class='row'>";
                     }
                     ?>
                      <div class="col-md-3 col-sm-3 video">
                          <img style="width:100%" src="<?php echo $video['thumbnail'] ?>" alt="">
-                         <span class="videoTitle" > <a href="<?php echo base_url("video/".$video['idVideo']) ?>"><?php echo $video['title'] ?></a></span>
+                         <span class="videoTitle" > <a href="<?php echo base_url("video/".$slug); ?>"><?php echo $video['title'] ?></a></span>
                      </div>
                <?php 
                     $count++;

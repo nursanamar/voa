@@ -38,7 +38,7 @@
             <div class="col-md-3 col-sm-3 video">
                 <img style="width:100%" src="<?php echo $video['thumbnail'] ?>" alt="">
                 <span class="videoTitle">
-                    <a href="<?php echo base_url("video/".$video['idVideo']) ?>">
+                    <a href="<?php echo base_url("video/".urlencode(str_replace(' ', '-', strtolower($video['title'])))) ?>">
                         <?php echo $video['title'] ?>
                     </a>
                 </span>

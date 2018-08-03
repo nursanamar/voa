@@ -8,7 +8,7 @@
 	<meta property="og:site_name" content="Voice Alauddin">
 	<meta property="og:title" content="<?php echo $title ?>" />
 	<meta property="og:description" content="<?php echo $description ?>" />
-	<meta property="og:image" content="<?php echo isset($thumbnails['maxres']) ? $thumbnails['maxres']['url'] : $thumbnails['standard']['url'] ?>" />
+	<meta property="og:image" content="<?php echo isset($thumbnails['maxres']['url']) ? $thumbnails['maxres']['url'] : isset($thumbnails['standard']['url']) ? $thumbnails['standard']['url'] : isset($thumbnails['default']['url']) ? $thumbnails['default']['url'] : $thumbnails['medium']['url'] ?>" />
 
 	<link rel="icon" type="image/png" href="<?php echo base_url() ?>assets/img/valogo.png" >
 	<!-- <link rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16"> -->

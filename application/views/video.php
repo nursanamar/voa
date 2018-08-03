@@ -2,7 +2,7 @@
 <html lang="en">
     <?php 
     
-        $this->load->view('template/head_video',$snippet) 
+        $this->load->view('template/head_video',$snippet)
         
     ?>
 <body>
@@ -37,7 +37,7 @@
 		<div class="container">
             <div class="row">
                 <div id="videoWraper" class="col-sm-9 col-md-9">
-                    <iframe id="video" src="https://www.youtube.com/embed/<?php echo $id ?>" frameborder="0" allow="autoplay; encrypted-media"
+                    <iframe id="video" src="https://www.youtube.com/embed/<?php echo $id["videoId"] ?>" frameborder="0" allow="autoplay; encrypted-media"
                         allowfullscreen></iframe>
                     <div class="col-md-12 col-md-12" style="margin-top:2%">
                         <div class="col-sm-6 col-md-6">

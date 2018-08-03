@@ -58,10 +58,12 @@ class Welcome extends CI_Controller
         return $temp;
     }
 
-    public function video($id)
+    public function video($query)
     {
-        $data = $this->youtube->getVideo($id);
+        
+        $data = $this->youtube->getVideo(urldecode($query));
         $data['items'][0]['playlist'] = $this->getPlaylists();
+        // var_dump($data);
         $this->load->view('video', $data['items'][0]);
     }
 
